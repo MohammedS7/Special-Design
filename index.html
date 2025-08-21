@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="Font_Awesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Special Design</title>
+    </head>
+    <body>
+
+    <!-- Start Setting Box -->
+    <div class="setting-box">
+        <div class="setting-icon" onclick="opening(), spin()">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="setting-content">
+            <div class="options">
+                <div class="color options-box">
+                    <h4><span>Colors</span></h4>
+                    <ul class="colors-options">
+                        <li id="item-1" data-color="#ff9800" onclick="changeColor(this.dataset.color, this.id)" class="active"></li>
+                        <li id="item-2" data-color="#e91e63" onclick="changeColor(this.dataset.color, this.id)"></li>
+                        <li id="item-3" data-color="#009688" onclick="changeColor(this.dataset.color, this.id)"></li>
+                        <li id="item-4" data-color="#03a9f4" onclick="changeColor(this.dataset.color, this.id)"></li>
+                        <li id="item-5" data-color="#4caf50" onclick="changeColor(this.dataset.color, this.id)"></li>
+                    </ul>
+                </div>
+                <div class="random-bck options-box">
+                    <h4><span>Random Background</span></h4>
+                    <div class="background-options options-choose">
+                        <span id="yes" onclick="setBck(this.id)" class="active-ron">Yes</span>
+                        <span id="no" onclick="setBck(this.id)">No</span>
+                    </div>
+                    <div class="images">
+                        <h4><span>Choose An Image</span></h4>
+                        <img src="imgs/01.jpg" alt="" id="01" onclick="chooseImg(this.id)">
+                        <img src="imgs/02.jpg" alt="" id="02" onclick="chooseImg(this.id)">
+                        <img src="imgs/03.jpg" alt="" id="03" onclick="chooseImg(this.id)">
+                        <img src="imgs/04.jpg" alt="" id="04" onclick="chooseImg(this.id)">
+                        <img src="imgs/05.jpg" alt="" id="05" onclick="chooseImg(this.id)">
+                    </div>
+                </div>
+                <div class="bullets-set options-box">
+                    <h4><span>Show The Bullets</span></h4>
+                    <div class="bullets-options options-choose">
+                        <span id="bullets-yes" onclick="setBullets(this.id)" class="active-b-ron">Yes</span>
+                        <span id="bullets-no" onclick="setBullets(this.id)">No</span>
+                    </div>
+                </div>
+                <div class="reset-btn">
+                    <button>Reset Options</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Setting Box -->
+
+    <!-- Start Header -->
+    <header id="header">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <h3 class="logo"><a href="#" class="logo">Special Design</a></h3>
+                <!-- Start Dark Mode -->
+                <div class="dark-mode" onclick="darkMode()">
+                    <button class="mood">🌙</button>
+                </div>
+                <!-- End Dark Mode -->
+
+                <!-- Start Burger Icon -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- End Burger Icon -->
+
+                <ul class="nav-links">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Landing Page -->
+        <div class="landing-content">
+            <h2 class="title">We Are <span>Creative</span> Agency</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                odit nihil ullam nesciunt quidem iste
+            </p>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+    <!-- Start About-Us -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <div class="info">
+                <h3><span>About Us</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis ipsum, tenetur dolores esse magni ratione distinctio!
+                    Quod iusto neque fuga, maxime quos nostrum quibusdam dicta
+                    deserunt blanditiis non voluptate id?
+                </p>
+            </div>
+            <img src="imgs/about-us.jpg" alt="about-us" class="image" />
+        </div>
+    </section>
+    <!-- End About-Us -->
+
+    <!-- Start Our Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills-content">
+                <h2><span>Our Skills</span></h2>
+                <div class="skills-box">
+                    <div class="box box-1">
+                        <div class="skill-name">HTML</div>
+                        <div class="progress"><span data-progress="width: 90%"></span></div>
+                    </div>
+                    <div class="box box-2">
+                        <div class="skill-name">CSS</div>
+                        <div class="progress"><span data-progress="width: 70%"></span></div>
+                    </div>
+                    <div class="box box-3">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress"><span data-progress="width: 90%"></span></div>
+                    </div>
+                    <div class="box box-4">
+                        <div class="skill-name">Python</div>
+                        <div class="progress"><span data-progress="width: 80%"></span></div>
+                    </div>
+                    <div class="box box-5">
+                        <div class="skill-name">PHP</div>
+                        <div class="progress"><span data-progress="width: 90%"></span></div>
+                    </div>
+                    <div class="box box-6">
+                        <div class="skill-name">MySQL</div>
+                        <div class="progress"><span data-progress="width: 70%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Skills -->
+
+    <!-- Start Our Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery-content">
+                <h2><span>Our Gallery</span></h2>
+                <div class="images-box">
+                    <div class="box">
+                        <img src="imgs/01.jpg" alt="Image One">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/02.jpg" alt="Image Two">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/03.jpg" alt="Image Three">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/04.jpg" alt="Image Four">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/05.jpg" alt="Image Five">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/06.png" alt="Image Six">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/07.jpg" alt="Image Seven">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/08.jpg" alt="Image Eight">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/09.jpg" alt="Image Nine">
+                    </div>
+                    <div class="box">
+                        <img src="imgs/10.jpg" alt="Image Ten">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popup Lightbox -->
+    <div class="popup" id="popup">
+        <div class="description">
+            <span id="popup-text"></span>
+            <img id="popupImg" src="">
+            <span class="close" id="close">&times;</span>
+        </div>
+    </div>
+    <!-- End Our Gallery -->
+
+    <!-- Start Timeline -->
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="years">
+                    <div class="year year-1">2024</div>
+                    <div class="year year-2">2022</div>
+                </div>
+                <div class="signes">
+                    <div class="sign sign-1"></div>
+                    <div class="sign sign-2"></div>
+                    <div class="sign sign-3"></div>
+                    <div class="sign sign-4"></div>
+                </div>
+                <div class="boxes">
+                    <div class="left">
+                        <div class="item item-1" data-aos="fade-right" data-aos-duration="1000">
+                            <h3><span>Testing Heading</span></h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. 
+                                Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+                            </p>
+                        </div>
+                        <div class="item item-3" data-aos="fade-right" data-aos-duration="1000">
+                            <h3><span>Testing Heading</span></h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. 
+                                Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item item-2" data-aos="fade-left" data-aos-duration="1000">
+                            <h3><span>Testing Heading</span></h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. 
+                                Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+                            </p>
+                        </div>
+                        <div class="item item-4" data-aos="fade-left" data-aos-duration="1000">
+                            <h3><span>Testing Heading</span></h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. 
+                                Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Timeline -->
+
+    <!-- Start Our Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-content">
+                <h2><span>Our Features</span></h2>
+                <div class="content">
+                    <div class="item item-1">
+                        <img src="imgs/programming.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Development</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <img src="imgs/advertising.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Marketing</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <img src="imgs/hosting-icon.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Hosting</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <img src="imgs/mobile-app.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Mobile Develope</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                    <div class="item item-5">
+                        <img src="imgs/graphic-design.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Cloud and Servers</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                    <div class="item item-6">
+                        <img src="imgs/web-design.svg" alt="programming" class="image">
+                        <div class="text">
+                            <h3 class="change-text">Seo</h3>
+                            <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Features -->
+
+    <!-- Start Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-content">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <p class="paragraph">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="name"><span>Ahmed Mosaad</span></div>
+                    <p>CEO At Company</p>
+                </div>
+                <div class="item">
+                    <p class="paragraph">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="name"><span>Mohamed Ibrahim</span></div>
+                    <p>CEO At Company</p>
+                </div>
+                <div class="item">
+                    <p class="paragraph">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="name"><span>Sherief Ashraf</span></div>
+                    <p>CEO At Company</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <section class="contact-us">
+        <div class="container">
+            <h2><span>Contact Us</span></h2>
+            <div class="contact-us-content">
+                <div class="inputes">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Phone">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="text-area">
+                    <textarea></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer>Created With Love By Mohammed</footer>
+    <!-- End Footer -->
+
+    <!-- Start Bullets -->
+    <div class="bullets">
+        <ul class="bullets-links">
+            <a href="#about"></a>
+            <a href="#skills"></a>
+            <a href="#gallery"></a>
+            <a href="#timeline"></a>
+            <a href="#features"></a>
+            <a href="#testimonials"></a>
+        </ul>
+    </div>
+    <!-- End Bullets -->
+
+    <!-- Start Scroll Up Button -->
+    <div class="scroll-up" onclick="scrollToUp()">
+        <button class="scroll"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <!-- End Scroll Up Button -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
