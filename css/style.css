@@ -422,6 +422,11 @@ header * {
 .about-us .info {
     width: 550px;
 }
+@media (max-width: 767px) {
+    .about-us .info {
+        width: 500px;
+    }
+}
 .about-us .info h3 {
     font-size: 30px;
     margin: 0 0 10px;
@@ -786,6 +791,12 @@ header * {
     background-color: var(--main-color);
     height: 4px;
     width: 15%;
+}
+@media (max-width: 991px)  {
+    .features .content .item .text h3::after {
+        margin: 0 auto;
+        left: 125px;
+    }
 }
 .features .content .item .text p {
     color: var(--text-color);
